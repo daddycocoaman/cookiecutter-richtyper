@@ -8,7 +8,9 @@ from . import APP_NAME, console
 from .styles import CustomHelpColorsCommand, CustomHelpColorsGroup
 
 app = typer.Typer(
-    name=APP_NAME, context_settings={"help_option_names": ["-h", "--help"]}
+    name=APP_NAME,
+    cls=CustomHelpColorsGroup,
+    context_settings={"help_option_names": ["-h", "--help"]},
 )
 
 
