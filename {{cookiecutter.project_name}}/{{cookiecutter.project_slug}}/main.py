@@ -1,8 +1,6 @@
-import time
 from importlib.metadata import version
 
 import typer
-from rich.panel import Panel
 
 from . import APP_NAME, console
 from .styles import CustomHelpColorsCommand, CustomHelpColorsGroup
